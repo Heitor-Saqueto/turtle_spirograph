@@ -14,18 +14,18 @@ def random_color():
     rgb = (r, g, b)
     return rgb
 
+
 teddy.speed(0)
-degree = [0, 90, 180, 270]
 
 
 def draw_spiograph(size_of_gap):
-    for _ in range(int(360/size_of_gap)):
+    for _ in range(int(360 / size_of_gap)):
         teddy.color(random_color())
         teddy.circle(100)
         teddy.setheading(teddy.heading() + size_of_gap)
 
-draw_spiograph(10)
 
+draw_spiograph(10)
 
 screen = Screen()
 screen.exitonclick()
